@@ -86,10 +86,12 @@ nav{
 /*Hero Styles*/
 #hero{
     width: 100%;
-    height: 450px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .heroLeft{
@@ -126,7 +128,7 @@ nav{
 .heroRight>img{
     margin-top: 85px;
     width: 70%;
-    height: 75%;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -162,6 +164,10 @@ nav{
     align-items: center;
     border-radius: 8px;
     background-color: #3a3053;
+    position: absolute;
+    top: 500px;
+    left:70px;
+    margin-top: 50px;
 }
 
 .inputContainer{
@@ -203,6 +209,114 @@ nav{
     background-color: #9ce2e2;
     transition: ease 0.3s;
     cursor: pointer;
+}
+
+/*Statistcs Section Styles*/
+#statistics{
+    width: 100%;
+    height: 850px;
+    background-color: #f0f1f6;
+}
+.sectionText{
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.statisticsTitle{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2f2d36;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.statisticsParagraph{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: grey;
+    line-height: 25px;
+}
+
+.cardsContainer{
+    margin-top: 20px;
+    height: 590px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    position: relative;
+    padding:10px;
+
+}
+
+
+.cardPosition1{
+    top:50px;
+}
+
+.cardPosition2{
+    top:100px;
+}
+
+.cardPosition3{
+    top:200px;
+}
+.iconContainer{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #353254;
+    position: absolute;
+    top:5px ;
+    left: 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.textContainer{
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 30px;
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px;
+}
+
+.cardTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f2d36;
+    margin-bottom: 15px;
+    
+}
+
+.cardInfo{
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.iconImg1{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
