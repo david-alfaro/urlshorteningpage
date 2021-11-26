@@ -83,6 +83,30 @@ nav{
     transition: ease 0.3s;
 }
 
+.menu-icon{
+    margin-right: 30px;
+    font-size: 30px;
+    color: gray;
+    display: none;
+}
+
+
+
+/*Menu media queries*/
+@media only screen and (max-width: 375px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+
+    .menu-icon{
+        display: inline-block;
+    }
+}
 /*Hero Styles*/
 #hero{
     width: 100%;
@@ -151,6 +175,29 @@ nav{
     cursor: pointer;
 }
 
+/*Hero Media Queries*/
+@media only screen and (max-width: 375px){
+    #hero{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .heroLeft{
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .heroRight{
+        width: 100%;
+    }
+
+    .heroRight>img{
+        margin-top: 85px;
+        width: 70%;
+        height: 200px;
+        object-fit: cover;
+    }
+} 
+
 /*Hero Input Styles*/
 .heroShorterInput{
     height: 120px;
@@ -211,6 +258,46 @@ nav{
     cursor: pointer;
 }
 
+/*Hero Input Media Queries*/
+@media only screen and (max-width: 375px){
+    .heroShorterInput{
+        top: 870px;
+        left:20px;
+        height: 90px;
+        width: 90%;
+    
+
+    }
+
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .inputContainer>input{
+        height: 35px;
+        width:100%;
+        margin-right: 10px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    
+    }
+
+    .btnShortenInput{
+        width: 90%;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .inputContainer>input::placeholder{
+        text-align: center;
+        font-size: 12px;
+    }
+} 
 /*Statistcs Section Styles*/
 #statistics{
     width: 100%;
@@ -319,6 +406,78 @@ nav{
     object-fit: cover;
 }
 
+/*Statistcs Media Queries*/
+@media only screen and (max-width: 375px){
+    #statistics{
+        height: 1400px;
+
+    }
+    .cardsContainer{
+        grid-template-columns:  1fr;
+        height: 900px;
+        width: 100%;
+        
+    }
+    .card{
+        margin: 0 auto;
+        width: 250px;
+        
+        
+    }
+    .sectionText{
+        
+        padding-top: 100px;
+        
+    }
+    .cardPosition1{
+        top:50px;
+    }
+    
+    .cardPosition2{
+        top:50px;
+    }
+    
+    .cardPosition3{
+        top:50px;
+    }
+
+} 
+
+@media only screen and (max-width: 900px){
+    #statistics{
+        height: 1400px;
+        width: 100%;
+    }
+    .cardsContainer{
+        grid-template-columns:  1fr;
+        height: 800px;
+        
+
+    }
+    .card{
+        margin: 0 auto;
+    
+    }
+
+    .sectionText{
+        
+        padding-top: 100px;
+        
+    }
+    .cardPosition1{
+        top:50px;
+    }
+    
+    .cardPosition2{
+        top:50px;
+    }
+    
+    .cardPosition3{
+        top:50px;
+    }
+
+} 
+
 /* Boost Section Styles*/
 #boostSection{
     width: 100%;
@@ -358,6 +517,16 @@ nav{
     cursor: pointer;
 }
 
+/* Boost Section Media Queries*/
+@media only screen and (max-width: 375px){
+    .boostTitle{
+        
+        font-size: 32px;
+        font-weight: 500;
+        
+    }
+
+} 
 /*Footer Styles*/
 footer{
     width: 100%;
@@ -397,8 +566,28 @@ footer{
     text-align: center;
     background-color: #232027;
     color: #fff;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+/*Footer Media Queries*/
+@media only screen and (max-width: 375px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: 1fr;
+        height: auto;
+        
+    }
+
+    .footerlogo{
+        margin-bottom: 50px;
+    }
+    .socialLinks{
+        margin:20px 0 20px 0;
+    }
 }
