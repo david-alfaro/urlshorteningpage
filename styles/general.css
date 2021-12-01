@@ -6,7 +6,7 @@ body{
 header{
     width: 100%;
     height: 80px;
-    margin: 0 auto;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -90,8 +90,56 @@ nav{
     display: none;
 }
 
+/*Mobile Menu Styles*/
+.mobile-menu{
+    width: 80%;
+    height: 350px;
+    background-color: #4b406b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto 10px auto;
+    border-radius: 15px;
+}
+.menu-item{
+    margin-bottom: 25px;
+    font-size: 22px;
+    
+}
+.menu-item > a{
+    color: #fff;
+    text-decoration: none;
+    
+}
 
+.mobile-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.SignUP-mobile{
+    padding: 20px 60px 20px 60px;
+    border:none;
+    border-radius: 50px;
+    background-color: #2dd0cf;
+    color: #fff;
+    font-size: 18px;
+}
+
+.line{
+    width: 80%;
+    height: 2px;
+    margin-top: 20px;
+    background-color: grey;
+}
+
+.hidden{
+    display: none;
+}
 /*Menu media queries*/
 @media only screen and (max-width: 375px){
     header{
