@@ -223,6 +223,8 @@ nav{
     cursor: pointer;
 }
 
+
+
 /*Hero Media Queries*/
 @media only screen and (max-width: 375px){
     #hero{
@@ -265,6 +267,46 @@ nav{
     margin-top: 50px;
 }
 
+.result{
+    position: absolute;
+    top: 700px;
+    left: 70px;
+    width: 87%;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.result-hidden{
+    display: none;
+}
+
+.originalLink{
+    color: #34313c;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.resultlink{
+    margin-right: 15px;
+    color: #2dd0cf;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.copyBtn{
+    background-color:#2dd0cf;
+    border: none;
+    padding: 8px 20px 8px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
 .inputContainer{
     width: 80%;
     height: auto;
@@ -355,7 +397,7 @@ nav{
 .sectionText{
     width: 35%;
     margin: 0 auto;
-    padding-top: 130px;
+    padding-top: 180px;
     text-align: center;
 }
 
