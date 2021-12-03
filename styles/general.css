@@ -277,12 +277,45 @@ nav{
     height: 30px;
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     border-radius: 10px;
     
 }
+
+@media only screen and (max-width: 375px){
+    .result{
+        flex-direction: column;
+        position: absolute;
+        top: 1030px;
+        left:15px;
+        height: auto;
+        width: 80%;
+        
+    }
+
+    .originalLink{
+        text-overflow: ellipsis;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+
+    .resultlink{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .copyBtn{
+        width: 100%;
+        margin-top: 10px;
+    }
+} 
 
 .result-hidden{
     display: none;
