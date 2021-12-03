@@ -2,6 +2,8 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+
 /*Header Styles*/
 header{
     width: 100%;
@@ -298,6 +300,8 @@ nav{
     font-size: 18px;
     font-weight: 600;
 }
+
+
 
 .copyBtn{
     background-color:#2dd0cf;

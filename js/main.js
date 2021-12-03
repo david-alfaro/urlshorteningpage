@@ -69,8 +69,15 @@ const getShortenUrl = async function(url){
 submitBtn.addEventListener('click',function(){
     
     if(input.value === ""){
+        Swal.fire({
+            icon: 'warning',
+            title: 'No URL...',
+            text: 'You need to provide a URL...',
+            
+        });
         console.log("no debe estar vacio");
     }else{
         getShortenUrl(input.value);
+        input.value="";
     }
 })
